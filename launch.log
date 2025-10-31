@@ -1,0 +1,910 @@
+1761906043.4369757 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2025-10-31-10-20-43-436422-356466dd1cb3-20160
+1761906043.4370606 [INFO] [launch]: Default logging verbosity is set to INFO
+1761906043.7028840 [INFO] [ros2_control_node-1]: process started with pid [20169]
+1761906043.7029772 [INFO] [spawner-2]: process started with pid [20170]
+1761906043.7030175 [INFO] [robot_state_publisher-3]: process started with pid [20171]
+1761906043.7112732 [robot_state_publisher-3] [WARN] [1761906043.711154491] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+1761906043.7113380 [robot_state_publisher-3] [WARN] [1761906043.711163391] [rcl]: 'localhost_only' is disabled, 'automatic_discovery_range' and 'static_peers' will be used.
+1761906043.7151971 [ros2_control_node-1] [WARN] [1761906043.715113711] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+1761906043.7152405 [ros2_control_node-1] [WARN] [1761906043.715124557] [rcl]: 'localhost_only' is disabled, 'automatic_discovery_range' and 'static_peers' will be used.
+1761906043.7224476 [robot_state_publisher-3] [INFO] [1761906043.722372502] [robot_state_publisher]: Robot initialized
+1761906043.7274506 [ros2_control_node-1] [INFO] [1761906043.727393736] [controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+1761906043.7292645 [ros2_control_node-1] [INFO] [1761906043.729227176] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+1761906043.7403359 [ros2_control_node-1] [INFO] [1761906043.740299311] [controller_manager]: update rate is 100 Hz
+1761906043.7404015 [ros2_control_node-1] [INFO] [1761906043.740318601] [controller_manager]: Overruns handling is : enabled
+1761906043.7404237 [ros2_control_node-1] [INFO] [1761906043.740321628] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+1761906043.7404783 [ros2_control_node-1] [WARN] [1761906043.740372021] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+1761906043.8847990 [spawner-2] [WARN] [1761906043.884672775] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+1761906043.8848779 [spawner-2] [WARN] [1761906043.884681810] [rcl]: 'localhost_only' is disabled, 'automatic_discovery_range' and 'static_peers' will be used.
+1761906043.9086328 [ros2_control_node-1] [INFO] [1761906043.908509233] [controller_manager]: Received robot description from topic.
+1761906043.9102468 [ros2_control_node-1] [INFO] [1761906043.910194778] [controller_manager]: Loading hardware 'OpenManipulatorXSystem' 
+1761906043.9134772 [ros2_control_node-1] [INFO] [1761906043.913380553] [controller_manager]: Loaded hardware 'OpenManipulatorXSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware'
+1761906043.9135981 [ros2_control_node-1] [INFO] [1761906043.913431053] [controller_manager]: Initialize hardware 'OpenManipulatorXSystem' 
+1761906043.9157963 [ros2_control_node-1] transmission_to_joint_matrix_ 
+1761906043.9158380 [ros2_control_node-1] [0][0] 1.000000, [0][1] 0.000000, [0][2] 0.000000, [0][3] 0.000000, [0][4] 0.000000, 
+1761906043.9158580 [ros2_control_node-1] [1][0] 0.000000, [1][1] 1.000000, [1][2] 0.000000, [1][3] 0.000000, [1][4] 0.000000, 
+1761906043.9159374 [ros2_control_node-1] [2][0] 0.000000, [2][1] 0.000000, [2][2] 1.000000, [2][3] 0.000000, [2][4] 0.000000, 
+1761906043.9159603 [ros2_control_node-1] [3][0] 0.000000, [3][1] 0.000000, [3][2] 0.000000, [3][3] 1.000000, [3][4] 0.000000, 
+1761906043.9159808 [ros2_control_node-1] [4][0] 0.000000, [4][1] 0.000000, [4][2] 0.000000, [4][3] 0.000000, [4][4] 1.000000, 
+1761906043.9159977 [ros2_control_node-1] joint_to_transmission_matrix_ 
+1761906043.9160218 [ros2_control_node-1] [0][0] 1.000000, [0][1] 0.000000, [0][2] 0.000000, [0][3] 0.000000, [0][4] 0.000000, 
+1761906043.9160373 [ros2_control_node-1] [1][0] 0.000000, [1][1] 1.000000, [1][2] 0.000000, [1][3] 0.000000, [1][4] 0.000000, 
+1761906043.9160511 [ros2_control_node-1] [2][0] 0.000000, [2][1] 0.000000, [2][2] 1.000000, [2][3] 0.000000, [2][4] 0.000000, 
+1761906043.9160645 [ros2_control_node-1] [3][0] 0.000000, [3][1] 0.000000, [3][2] 0.000000, [3][3] 1.000000, [3][4] 0.000000, 
+1761906043.9161248 [ros2_control_node-1] [4][0] 0.000000, [4][1] 0.000000, [4][2] 0.000000, [4][3] 0.000000, [4][4] 1.000000, 
+1761906043.9161475 [ros2_control_node-1] [INFO] [1761906043.915769515] [dynamixel_hardware_interface]: Torque will be disabled during initialization if it is enabled at initialization.
+1761906043.9161644 [ros2_control_node-1] [INFO] [1761906043.915780341] [dynamixel_hardware_interface]: port_name /dev/ttyUSB0 / baudrate 1000000
+1761906043.9161797 [ros2_control_node-1] Dynamixel Information File List.
+1761906043.9161937 [ros2_control_node-1] num: 30, name: mx_28.model
+1761906043.9162076 [ros2_control_node-1] num: 220, name: omy_hat.model
+1761906043.9162209 [ros2_control_node-1] num: 230, name: omy_end.model
+1761906043.9162347 [ros2_control_node-1] num: 231, name: omy_end_rh_p12_rn.model
+1761906043.9162481 [ros2_control_node-1] num: 311, name: mx_64.model
+1761906043.9162612 [ros2_control_node-1] num: 321, name: mx_106.model
+1761906043.9162736 [ros2_control_node-1] num: 350, name: xl320.model
+1761906043.9162869 [ros2_control_node-1] num: 536, name: sensorxel_joy.model
+1761906043.9163003 [ros2_control_node-1] num: 537, name: ffw_g40_imu.model
+1761906043.9163134 [ros2_control_node-1] num: 600, name: sensorxel_joy.model
+1761906043.9163260 [ros2_control_node-1] num: 601, name: ffw_g10_led.model
+1761906043.9163392 [ros2_control_node-1] num: 602, name: ffw_g10_rcu.model
+1761906043.9163525 [ros2_control_node-1] num: 620, name: ffw_sg2_steer_1.model
+1761906043.9163659 [ros2_control_node-1] num: 621, name: ffw_sg2_steer_2.model
+1761906043.9163792 [ros2_control_node-1] num: 622, name: ffw_sg2_steer_3.model
+1761906043.9163916 [ros2_control_node-1] num: 623, name: ffw_sg2_drive_1.model
+1761906043.9164054 [ros2_control_node-1] num: 624, name: ffw_sg2_drive_2.model
+1761906043.9164228 [ros2_control_node-1] num: 625, name: ffw_sg2_drive_3.model
+1761906043.9164379 [ros2_control_node-1] num: 1000, name: xh430_w350.model
+1761906043.9164519 [ros2_control_node-1] num: 1001, name: xd430_t350.model
+1761906043.9164655 [ros2_control_node-1] num: 1010, name: xh430_w210.model
+1761906043.9164808 [ros2_control_node-1] num: 1011, name: xd430_t210.model
+1761906043.9164946 [ros2_control_node-1] num: 1020, name: xm430_w350.model
+1761906043.9165082 [ros2_control_node-1] num: 1030, name: xm430_w210.model
+1761906043.9165223 [ros2_control_node-1] num: 1040, name: xh430_v350.model
+1761906043.9165361 [ros2_control_node-1] num: 1050, name: xh430_v210.model
+1761906043.9165492 [ros2_control_node-1] num: 1060, name: xl430_w250.model
+1761906043.9165618 [ros2_control_node-1] num: 1070, name: xc430_w150.model
+1761906043.9165750 [ros2_control_node-1] num: 1070, name: xc430_w150.model
+1761906043.9165881 [ros2_control_node-1] num: 1080, name: xc430_w240.model
+1761906043.9166012 [ros2_control_node-1] num: 1080, name: xc430_w240.model
+1761906043.9166136 [ros2_control_node-1] num: 1090, name: 2xl430_w250.model
+1761906043.9166267 [ros2_control_node-1] num: 1100, name: xh540_w270.model
+1761906043.9166398 [ros2_control_node-1] num: 1101, name: xd540_t270.model
+1761906043.9166524 [ros2_control_node-1] num: 1110, name: xh540_w150.model
+1761906043.9166651 [ros2_control_node-1] num: 1111, name: xd540_t150.model
+1761906043.9166777 [ros2_control_node-1] num: 1120, name: xm540_w270.model
+1761906043.9166903 [ros2_control_node-1] num: 1130, name: xm540_w150.model
+1761906043.9167032 [ros2_control_node-1] num: 1140, name: xh540_v270.model
+1761906043.9167161 [ros2_control_node-1] num: 1150, name: xh540_v150.model
+1761906043.9167285 [ros2_control_node-1] num: 1160, name: 2xc430_w250.model
+1761906043.9167428 [ros2_control_node-1] num: 1170, name: xw540_t260.model
+1761906043.9167564 [ros2_control_node-1] num: 1180, name: xw540_t140.model
+1761906043.9167695 [ros2_control_node-1] num: 1190, name: xl330_m077.model
+1761906043.9167829 [ros2_control_node-1] num: 1200, name: xl330_m288.model
+1761906043.9167969 [ros2_control_node-1] num: 1210, name: xc330_t181.model
+1761906043.9168103 [ros2_control_node-1] num: 1220, name: xc330_t288.model
+1761906043.9168236 [ros2_control_node-1] num: 1230, name: xc330_m181.model
+1761906043.9168813 [ros2_control_node-1] num: 1240, name: xc330_m288.model
+1761906043.9169025 [ros2_control_node-1] num: 1270, name: xw430_t333.model
+1761906043.9169204 [ros2_control_node-1] num: 1310, name: xw540_h260.model
+1761906043.9169357 [ros2_control_node-1] num: 2000, name: ph42_020_s300.model
+1761906043.9169497 [ros2_control_node-1] num: 2010, name: ph54_100_s500.model
+1761906043.9169631 [ros2_control_node-1] num: 2020, name: ph54_200_s500.model
+1761906043.9169772 [ros2_control_node-1] num: 2100, name: pm42_010_s260.model
+1761906043.9169903 [ros2_control_node-1] num: 2110, name: pm54_040_s250.model
+1761906043.9170029 [ros2_control_node-1] num: 2120, name: pm54_060_s250.model
+1761906043.9170163 [ros2_control_node-1] num: 4000, name: ym070_210_m001.model
+1761906043.9170296 [ros2_control_node-1] num: 4010, name: ym070_210_b001.model
+1761906043.9170425 [ros2_control_node-1] num: 4020, name: ym070_210_r051.model
+1761906043.9170556 [ros2_control_node-1] num: 4030, name: ym070_210_r099.model
+1761906043.9170682 [ros2_control_node-1] num: 4040, name: ym070_210_a051.model
+1761906043.9170811 [ros2_control_node-1] num: 4050, name: ym070_210_a099.model
+1761906043.9170942 [ros2_control_node-1] num: 4120, name: ym080_230_m001.model
+1761906043.9171073 [ros2_control_node-1] num: 4130, name: ym080_230_b001.model
+1761906043.9171197 [ros2_control_node-1] num: 4140, name: ym080_230_r051.model
+1761906043.9171343 [ros2_control_node-1] num: 4150, name: ym080_230_r099.model
+1761906043.9171469 [ros2_control_node-1] num: 4160, name: ym080_230_a051.model
+1761906043.9171894 [ros2_control_node-1] num: 4170, name: ym080_230_a099.model
+1761906043.9172091 [ros2_control_node-1] num: 35074, name: rh_p12_rn.model
+1761906043.9172263 [ros2_control_node-1] num: 43289, name: m42_10_s260_ra.model
+1761906043.9172421 [ros2_control_node-1] num: 46097, name: m54_40_s250_ra.model
+1761906043.9172571 [ros2_control_node-1] num: 46353, name: m54_60_s250_ra.model
+1761906043.9172704 [ros2_control_node-1] num: 51201, name: h42_20_s300_ra.model
+1761906043.9172840 [ros2_control_node-1] num: 53769, name: h54_100_s500_ra.model
+1761906043.9172969 [ros2_control_node-1] num: 54025, name: h54_200_s500_ra.model
+1761906043.9173100 [ros2_control_node-1] [INFO] [1761906043.915905538] [dynamixel_hardware_interface]: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+1761906043.9173231 [ros2_control_node-1] [INFO] [1761906043.915908076] [dynamixel_hardware_interface]: $$$$$ Init Dxl Comm Port
+1761906043.9173357 [ros2_control_node-1] [INFO] [1761906043.915910152] [dynamixel_hardware_interface]: Revolute to Prismatic gripper conversion enabled.
+1761906043.9173775 [ros2_control_node-1] [INFO] [1761906043.915919512] [dynamixel_hardware_interface]: $$$$$ Init Items for type: controller
+1761906043.9173970 [ros2_control_node-1] [INFO] [1761906043.915922025] [dynamixel_hardware_interface]: $$$$$ Init Items for type: virtual_dxl
+1761906043.9174502 [ros2_control_node-1] Succeeded to open the port!
+1761906043.9174690 [ros2_control_node-1] Succeeded to change the [1000000] baudrate!
+1761906043.9175112 [ros2_control_node-1] [ID:011] Request ping	 - Ping succeeded. Dynamixel model number : 1020 (xm430_w350.model)
+1761906043.9193757 [ros2_control_node-1] [ID:012] Request ping	 - Ping succeeded. Dynamixel model number : 1020 (xm430_w350.model)
+1761906043.9213643 [ros2_control_node-1] [ID:013] Request ping	 - Ping succeeded. Dynamixel model number : 1020 (xm430_w350.model)
+1761906043.9233987 [ros2_control_node-1] [ID:014] Request ping	 - Ping succeeded. Dynamixel model number : 1020 (xm430_w350.model)
+1761906043.9253852 [ros2_control_node-1] [ID:015] Request ping	 - Ping succeeded. Dynamixel model number : 1020 (xm430_w350.model)
+1761906043.9256182 [spawner-2] [INFO] [1761906043.925587508] [spawner_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
+1761906043.9263945 [ros2_control_node-1] [INFO] [1761906043.926368499] [dynamixel_hardware_interface]: Trying to connect to the communication port...
+1761906043.9273369 [ros2_control_node-1] [InitTorqueStates][ID:011] Current torque state: OFF
+1761906043.9283712 [ros2_control_node-1] [InitTorqueStates][ID:012] Current torque state: OFF
+1761906043.9293568 [ros2_control_node-1] [InitTorqueStates][ID:013] Current torque state: OFF
+1761906043.9303505 [ros2_control_node-1] [InitTorqueStates][ID:014] Current torque state: OFF
+1761906043.9313354 [ros2_control_node-1] [InitTorqueStates][ID:015] Current torque state: OFF
+1761906043.9313560 [ros2_control_node-1] [INFO] [1761906043.931312747] [dynamixel_hardware_interface]: $$$$$ Init Items for type: dxl
+1761906043.9314063 [ros2_control_node-1] [INFO] [1761906043.931317772] [dynamixel_hardware_interface]: [ID:11] item_name:Operating Mode	data:3
+1761906043.9323552 [ros2_control_node-1] [INFO] [1761906043.932320383] [dynamixel_hardware_interface]: [ID:11] item_name:Return Delay Time	data:0
+1761906043.9333789 [ros2_control_node-1] [INFO] [1761906043.933351743] [dynamixel_hardware_interface]: [ID:11] item_name:Position D Gain	data:100
+1761906043.9343638 [ros2_control_node-1] [INFO] [1761906043.934337262] [dynamixel_hardware_interface]: [ID:11] item_name:Position I Gain	data:100
+1761906043.9353719 [ros2_control_node-1] [INFO] [1761906043.935346395] [dynamixel_hardware_interface]: [ID:11] item_name:Position P Gain	data:800
+1761906043.9363811 [ros2_control_node-1] [INFO] [1761906043.936355568] [dynamixel_hardware_interface]: [ID:11] item_name:Drive Mode	data:4
+1761906043.9373405 [ros2_control_node-1] [INFO] [1761906043.937313606] [dynamixel_hardware_interface]: [ID:11] item_name:Profile Velocity	data:20
+1761906043.9384699 [ros2_control_node-1] [INFO] [1761906043.938350273] [dynamixel_hardware_interface]: [ID:11] item_name:Profile Acceleration	data:10
+1761906043.9394138 [ros2_control_node-1] [INFO] [1761906043.939333660] [dynamixel_hardware_interface]: [ID:12] item_name:Operating Mode	data:3
+1761906043.9404228 [ros2_control_node-1] [INFO] [1761906043.940353542] [dynamixel_hardware_interface]: [ID:12] item_name:Return Delay Time	data:0
+1761906043.9413791 [ros2_control_node-1] [INFO] [1761906043.941316917] [dynamixel_hardware_interface]: [ID:12] item_name:Position D Gain	data:100
+1761906043.9424071 [ros2_control_node-1] [INFO] [1761906043.942345855] [dynamixel_hardware_interface]: [ID:12] item_name:Position I Gain	data:100
+1761906043.9434292 [ros2_control_node-1] [INFO] [1761906043.943361631] [dynamixel_hardware_interface]: [ID:12] item_name:Position P Gain	data:800
+1761906043.9443810 [ros2_control_node-1] [INFO] [1761906043.944320882] [dynamixel_hardware_interface]: [ID:12] item_name:Drive Mode	data:4
+1761906043.9453874 [ros2_control_node-1] [INFO] [1761906043.945330812] [dynamixel_hardware_interface]: [ID:12] item_name:Profile Velocity	data:20
+1761906043.9464092 [ros2_control_node-1] [INFO] [1761906043.946340951] [dynamixel_hardware_interface]: [ID:12] item_name:Profile Acceleration	data:10
+1761906043.9474096 [ros2_control_node-1] [INFO] [1761906043.947352196] [dynamixel_hardware_interface]: [ID:13] item_name:Operating Mode	data:3
+1761906043.9483752 [ros2_control_node-1] [INFO] [1761906043.948320611] [dynamixel_hardware_interface]: [ID:13] item_name:Return Delay Time	data:0
+1761906043.9493973 [ros2_control_node-1] [INFO] [1761906043.949359042] [dynamixel_hardware_interface]: [ID:13] item_name:Position D Gain	data:100
+1761906043.9503684 [ros2_control_node-1] [INFO] [1761906043.950338959] [dynamixel_hardware_interface]: [ID:13] item_name:Position I Gain	data:100
+1761906043.9513817 [ros2_control_node-1] [INFO] [1761906043.951354178] [dynamixel_hardware_interface]: [ID:13] item_name:Position P Gain	data:800
+1761906043.9523497 [ros2_control_node-1] [INFO] [1761906043.952320836] [dynamixel_hardware_interface]: [ID:13] item_name:Drive Mode	data:4
+1761906043.9533756 [ros2_control_node-1] [INFO] [1761906043.953348917] [dynamixel_hardware_interface]: [ID:13] item_name:Profile Velocity	data:20
+1761906043.9543653 [ros2_control_node-1] [INFO] [1761906043.954338618] [dynamixel_hardware_interface]: [ID:13] item_name:Profile Acceleration	data:10
+1761906043.9553845 [ros2_control_node-1] [INFO] [1761906043.955358704] [dynamixel_hardware_interface]: [ID:14] item_name:Operating Mode	data:3
+1761906043.9563797 [ros2_control_node-1] [INFO] [1761906043.956350771] [dynamixel_hardware_interface]: [ID:14] item_name:Return Delay Time	data:0
+1761906043.9573436 [ros2_control_node-1] [INFO] [1761906043.957318065] [dynamixel_hardware_interface]: [ID:14] item_name:Position D Gain	data:100
+1761906043.9583669 [ros2_control_node-1] [INFO] [1761906043.958341109] [dynamixel_hardware_interface]: [ID:14] item_name:Position I Gain	data:100
+1761906043.9593787 [ros2_control_node-1] [INFO] [1761906043.959353094] [dynamixel_hardware_interface]: [ID:14] item_name:Position P Gain	data:800
+1761906043.9603407 [ros2_control_node-1] [INFO] [1761906043.960315562] [dynamixel_hardware_interface]: [ID:14] item_name:Drive Mode	data:4
+1761906043.9613490 [ros2_control_node-1] [INFO] [1761906043.961323775] [dynamixel_hardware_interface]: [ID:14] item_name:Profile Velocity	data:20
+1761906043.9623628 [ros2_control_node-1] [INFO] [1761906043.962337684] [dynamixel_hardware_interface]: [ID:14] item_name:Profile Acceleration	data:10
+1761906043.9633744 [ros2_control_node-1] [INFO] [1761906043.963347074] [dynamixel_hardware_interface]: [ID:15] item_name:Operating Mode	data:5
+1761906043.9643931 [ros2_control_node-1] [INFO] [1761906043.964357999] [dynamixel_hardware_interface]: [ID:15] item_name:Goal Current	data:200
+1761906043.9653559 [ros2_control_node-1] [INFO] [1761906043.965320232] [dynamixel_hardware_interface]: [ID:15] item_name:Return Delay Time	data:0
+1761906043.9663589 [ros2_control_node-1] [INFO] [1761906043.966330483] [dynamixel_hardware_interface]: [ID:15] item_name:Drive Mode	data:4
+1761906043.9673407 [ros2_control_node-1] [INFO] [1761906043.967316529] [dynamixel_hardware_interface]: [ID:15] item_name:Profile Velocity	data:20
+1761906043.9683776 [ros2_control_node-1] [INFO] [1761906043.968353088] [dynamixel_hardware_interface]: [ID:15] item_name:Profile Acceleration	data:10
+1761906043.9693642 [ros2_control_node-1] [INFO] [1761906043.969338390] [dynamixel_hardware_interface]: $$$$$ Init Items for type: sensor
+1761906043.9694169 [ros2_control_node-1] [INFO] [1761906043.969345466] [dynamixel_hardware_interface]: $$$$$ Init Dxl Read Items
+1761906043.9694378 [ros2_control_node-1] Dynamixel Read Type : sync read
+1761906043.9694552 [ros2_control_node-1] ID : 11, 12, 13, 14, 15, 
+1761906043.9694707 [ros2_control_node-1] Read items : 	Present Position	Present Velocity	Present Current
+1761906044.0194244 [ros2_control_node-1] set fast sync read (indirect addr) : addr 634, size 10
+1761906044.0194924 [ros2_control_node-1] FastSyncRead handler set up successfully.
+1761906044.0195148 [ros2_control_node-1] Success to set SyncRead handler using indirect address
+1761906044.0195317 [ros2_control_node-1] [INFO] [1761906044.019340323] [dynamixel_hardware_interface]: $$$$$ Init Dxl Write Items
+1761906044.0196164 [ros2_control_node-1] Dynamixel Write Type : sync write
+1761906044.0196400 [ros2_control_node-1] ID : 11, 12, 13, 14, 15, 
+1761906044.0196569 [ros2_control_node-1] Write items : 	Goal Position
+1761906044.0394418 [ros2_control_node-1] set sync write (indirect addr) : addr 224, size 4
+1761906044.0395000 [ros2_control_node-1] Success to set SyncWrite handler using indirect address
+1761906044.0413747 [ros2_control_node-1] [INFO] [1761906044.041315854] [controller_manager]: Successful initialization of hardware 'OpenManipulatorXSystem'
+1761906044.0414946 [ros2_control_node-1] [INFO] [1761906044.041457601] [resource_manager]: 'configure' hardware 'OpenManipulatorXSystem' 
+1761906044.0415273 [ros2_control_node-1] [INFO] [1761906044.041461548] [resource_manager]: Successful 'configure' of hardware 'OpenManipulatorXSystem'
+1761906044.0415828 [ros2_control_node-1] [INFO] [1761906044.041465840] [resource_manager]: 'activate' hardware 'OpenManipulatorXSystem' 
+1761906044.0766191 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.0766759 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 1/10)
+1761906044.0766981 [ros2_control_node-1] [ERROR] [1761906044.076552348] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906044.1117280 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.1117737 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 2/10)
+1761906044.1467996 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.1468441 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 3/10)
+1761906044.1766641 [spawner-2] [WARN] [1761906044.176610094] [spawner_arm_controller]: [93mController already loaded, skipping load_controller[0m
+1761906044.1777537 [spawner-2] [ERROR] [1761906044.177685800] [spawner_arm_controller]: [91mFailed to configure controller[0m
+1761906044.1818719 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.1819270 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 4/10)
+1761906044.2170110 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.2170908 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 5/10)
+1761906044.2521825 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.2523046 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 6/10)
+1761906044.2872026 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.2873027 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 7/10)
+1761906044.3000295 [ERROR] [spawner-2]: process has died [pid 20170, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner arm_controller gripper_controller joint_state_broadcaster --ros-args --params-file /tmp/launch_params_q9c_uuw8'].
+1761906044.3014536 [INFO] [joint_trajectory_executor-4]: process started with pid [20241]
+1761906044.3223038 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.3224006 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 8/10)
+1761906044.3574216 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.3575218 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 9/10)
+1761906044.3925390 [ros2_control_node-1] FastSyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.3926358 [ros2_control_node-1] FastSyncRead TxRx failed (attempt 10/10)
+1761906044.3926826 [ros2_control_node-1] FastSyncRead failed 10 times, switching to normal SyncRead permanently.
+1761906044.3927226 [ros2_control_node-1] set sync read (indirect addr) : addr 634, size 10
+1761906044.4276836 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.4627624 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.4645541 [ros2_control_node-1] [INFO] [1761906044.464457250] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint1, position, -0.00613592 <- position, -0.00613592
+1761906044.4647212 [ros2_control_node-1] [INFO] [1761906044.464483334] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint2, position, -0.0490874 <- position, -0.0490874
+1761906044.4647808 [ros2_control_node-1] [INFO] [1761906044.464486744] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint3, position, 0.600079 <- position, 0.600079
+1761906044.4648311 [ros2_control_node-1] [INFO] [1761906044.464489539] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint4, position, 1.03748 <- position, 1.03748
+1761906044.4648724 [ros2_control_node-1] [INFO] [1761906044.464492043] [dynamixel_hardware_interface]: Sync joint state to command (joint: gripper_left_joint, position, -0.00716442 <- position, -0.00716442
+1761906044.4649997 [ros2_control_node-1] [INFO] [1761906044.464513071] [dynamixel_hardware_interface]: Enabling torque for Dynamixels
+1761906044.4662917 [ros2_control_node-1] [ID:011] Torque ON
+1761906044.4674318 [ros2_control_node-1] [ID:012] Torque ON
+1761906044.4684029 [ros2_control_node-1] [ID:013] Torque ON
+1761906044.4693921 [ros2_control_node-1] [ID:014] Torque ON
+1761906044.4703929 [ros2_control_node-1] [ID:015] Torque ON
+1761906044.4704387 [ros2_control_node-1] [INFO] [1761906044.470332016] [dynamixel_hardware_interface]: Dynamixel Hardware Start!
+1761906044.4705117 [ros2_control_node-1] [INFO] [1761906044.470353220] [resource_manager]: Successful 'activate' of hardware 'OpenManipulatorXSystem'
+1761906044.4705353 [ros2_control_node-1] [INFO] [1761906044.470396619] [controller_manager]: Registering statistics for : OpenManipulatorXSystem
+1761906044.4705532 [ros2_control_node-1] [INFO] [1761906044.470438020] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+1761906044.4806714 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.4807734 [ros2_control_node-1] [ERROR] [1761906044.480618910] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0011ms/500ms)
+1761906044.4807980 [ros2_control_node-1] [ERROR] [1761906044.480685767] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0011ms/500ms)
+1761906044.4808159 [ros2_control_node-1] [WARN] [1761906044.480701914] [controller_manager]: Overrun might occur, Total time : 10145.664 us (Expected < 10000.000 us) --> Read time : 10117.220 us, Update time : 8.390 us, Write time : 20.054 us
+1761906044.4808321 [ros2_control_node-1] [WARN] [1761906044.480716828] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.216090 ms (missed cycles : 2).
+1761906044.5106936 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.5107555 [ros2_control_node-1] [ERROR] [1761906044.510615799] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0028ms/500ms)
+1761906044.5108430 [ros2_control_node-1] [ERROR] [1761906044.510668754] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0028ms/500ms)
+1761906044.5406554 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.5406997 [ros2_control_node-1] [ERROR] [1761906044.540601026] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0004ms/500ms)
+1761906044.5407689 [ros2_control_node-1] [ERROR] [1761906044.540637126] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0004ms/500ms)
+1761906044.5629520 [joint_trajectory_executor-4] [WARN] [1761906044.562836445] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+1761906044.5630052 [joint_trajectory_executor-4] [WARN] [1761906044.562844311] [rcl]: 'localhost_only' is disabled, 'automatic_discovery_range' and 'static_peers' will be used.
+1761906044.5707104 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.5707762 [ros2_control_node-1] [ERROR] [1761906044.570624369] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9986ms/500ms)
+1761906044.5708728 [ros2_control_node-1] [ERROR] [1761906044.570678193] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9986ms/500ms)
+1761906044.6007354 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.6008115 [ros2_control_node-1] [ERROR] [1761906044.600639389] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0029ms/500ms)
+1761906044.6009095 [ros2_control_node-1] [ERROR] [1761906044.600721319] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0029ms/500ms)
+1761906044.6306942 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.6307690 [ros2_control_node-1] [ERROR] [1761906044.630601938] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0007ms/500ms)
+1761906044.6308684 [ros2_control_node-1] [ERROR] [1761906044.630645637] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0007ms/500ms)
+1761906044.6707213 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.6707931 [ros2_control_node-1] [ERROR] [1761906044.670627103] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.995ms/500ms)
+1761906044.6708884 [ros2_control_node-1] [ERROR] [1761906044.670687855] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.995ms/500ms)
+1761906044.6826031 [joint_trajectory_executor-4] [INFO] [1761906044.682515219] [joint_trajectory_executor]: Waiting for action server...
+1761906044.7307055 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.7307746 [ros2_control_node-1] [ERROR] [1761906044.730613560] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99998ms/500ms)
+1761906044.7308631 [ros2_control_node-1] [ERROR] [1761906044.730661198] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99998ms/500ms)
+1761906044.7606730 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.7607810 [ros2_control_node-1] [ERROR] [1761906044.760609018] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0016ms/500ms)
+1761906044.7608356 [ros2_control_node-1] [ERROR] [1761906044.760652257] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0016ms/500ms)
+1761906044.8207028 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.8207717 [ros2_control_node-1] [ERROR] [1761906044.820620909] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0009ms/500ms)
+1761906044.8208554 [ros2_control_node-1] [ERROR] [1761906044.820666341] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0009ms/500ms)
+1761906044.8506663 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.8507614 [ros2_control_node-1] [ERROR] [1761906044.850612516] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0004ms/500ms)
+1761906044.8508120 [ros2_control_node-1] [ERROR] [1761906044.850649363] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0004ms/500ms)
+1761906044.8906708 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.8907259 [ros2_control_node-1] [ERROR] [1761906044.890611257] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0003ms/500ms)
+1761906044.8908055 [ros2_control_node-1] [ERROR] [1761906044.890653766] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0003ms/500ms)
+1761906044.9306667 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.9307146 [ros2_control_node-1] [ERROR] [1761906044.930609778] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0003ms/500ms)
+1761906044.9307880 [ros2_control_node-1] [ERROR] [1761906044.930642919] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0003ms/500ms)
+1761906044.9807124 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906044.9807703 [ros2_control_node-1] [ERROR] [1761906044.980598873] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0002ms/500ms)
+1761906044.9807920 [ros2_control_node-1] [ERROR] [1761906044.980636810] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0002ms/500ms)
+1761906045.0207267 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.0207870 [ros2_control_node-1] [ERROR] [1761906045.020613533] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99927ms/500ms)
+1761906045.0208087 [ros2_control_node-1] [ERROR] [1761906045.020643262] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99927ms/500ms)
+1761906045.0506980 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.0507591 [ros2_control_node-1] [ERROR] [1761906045.050593806] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0003ms/500ms)
+1761906045.0507810 [ros2_control_node-1] [ERROR] [1761906045.050619310] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0003ms/500ms)
+1761906045.0906916 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.0907574 [ros2_control_node-1] [ERROR] [1761906045.090591862] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906045.0908399 [ros2_control_node-1] [ERROR] [1761906045.090617451] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9993ms/500ms)
+1761906045.0908637 [ros2_control_node-1] [ERROR] [1761906045.090636380] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9993ms/500ms)
+1761906045.1306930 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.1307631 [ros2_control_node-1] [ERROR] [1761906045.130597112] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99877ms/500ms)
+1761906045.1308529 [ros2_control_node-1] [ERROR] [1761906045.130630167] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99877ms/500ms)
+1761906045.1607473 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.1608322 [ros2_control_node-1] [ERROR] [1761906045.160599344] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99976ms/500ms)
+1761906045.1608884 [ros2_control_node-1] [ERROR] [1761906045.160612016] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99976ms/500ms)
+1761906045.1907253 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.1908126 [ros2_control_node-1] [ERROR] [1761906045.190588861] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30ms/500ms)
+1761906045.1908581 [ros2_control_node-1] [ERROR] [1761906045.190602092] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30ms/500ms)
+1761906045.2307286 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.2308180 [ros2_control_node-1] [ERROR] [1761906045.230595578] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9997ms/500ms)
+1761906045.2308633 [ros2_control_node-1] [ERROR] [1761906045.230625512] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9997ms/500ms)
+1761906045.2807465 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.2808390 [ros2_control_node-1] [ERROR] [1761906045.280606205] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99928ms/500ms)
+1761906045.2808855 [ros2_control_node-1] [ERROR] [1761906045.280630534] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99928ms/500ms)
+1761906045.3607624 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.3608756 [ros2_control_node-1] [ERROR] [1761906045.360598731] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0072ms/500ms)
+1761906045.3609223 [ros2_control_node-1] [ERROR] [1761906045.360639261] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0072ms/500ms)
+1761906045.3907402 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.3908262 [ros2_control_node-1] [ERROR] [1761906045.390611437] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99941ms/500ms)
+1761906045.3908727 [ros2_control_node-1] [ERROR] [1761906045.390651514] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99941ms/500ms)
+1761906045.4207079 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.4207847 [ros2_control_node-1] [ERROR] [1761906045.420595184] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99781ms/500ms)
+1761906045.4208312 [ros2_control_node-1] [ERROR] [1761906045.420624441] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99781ms/500ms)
+1761906045.4507253 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.4508057 [ros2_control_node-1] [ERROR] [1761906045.450609738] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.998ms/500ms)
+1761906045.4508529 [ros2_control_node-1] [ERROR] [1761906045.450633537] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.998ms/500ms)
+1761906045.4907355 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.4908152 [ros2_control_node-1] [ERROR] [1761906045.490609848] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.999ms/500ms)
+1761906045.4908609 [ros2_control_node-1] [ERROR] [1761906045.490648082] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.999ms/500ms)
+1761906045.4909921 [ros2_control_node-1] [WARN] [1761906045.490660492] [controller_manager]: Overrun might occur, Total time : 30102.905 us (Expected < 10000.000 us) --> Read time : 30082.131 us, Update time : 5.234 us, Write time : 15.540 us
+1761906045.4910395 [ros2_control_node-1] [WARN] [1761906045.490674210] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.173771 ms (missed cycles : 4).
+1761906045.5307288 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.5308092 [ros2_control_node-1] [ERROR] [1761906045.530607588] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0018ms/500ms)
+1761906045.5308549 [ros2_control_node-1] [ERROR] [1761906045.530641181] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0018ms/500ms)
+1761906045.5607278 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.5608084 [ros2_control_node-1] [ERROR] [1761906045.560607854] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0022ms/500ms)
+1761906045.5609372 [ros2_control_node-1] [ERROR] [1761906045.560645475] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0022ms/500ms)
+1761906045.5907781 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.5908797 [ros2_control_node-1] [ERROR] [1761906045.590619506] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99719ms/500ms)
+1761906045.5910275 [ros2_control_node-1] [ERROR] [1761906045.590669639] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99719ms/500ms)
+1761906045.6207461 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.6208286 [ros2_control_node-1] [ERROR] [1761906045.620596176] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9976ms/500ms)
+1761906045.6208725 [ros2_control_node-1] [ERROR] [1761906045.620629483] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9976ms/500ms)
+1761906045.6607707 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.6608875 [ros2_control_node-1] [ERROR] [1761906045.660607575] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9964ms/500ms)
+1761906045.6609323 [ros2_control_node-1] [ERROR] [1761906045.660638835] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9964ms/500ms)
+1761906045.6907063 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.6907804 [ros2_control_node-1] [ERROR] [1761906045.690612865] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99836ms/500ms)
+1761906045.6909091 [ros2_control_node-1] [ERROR] [1761906045.690646473] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99836ms/500ms)
+1761906045.7407768 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.7408879 [ros2_control_node-1] [ERROR] [1761906045.740614341] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99907ms/500ms)
+1761906045.7410309 [ros2_control_node-1] [ERROR] [1761906045.740659509] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99907ms/500ms)
+1761906045.7907825 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.7908838 [ros2_control_node-1] [ERROR] [1761906045.790609682] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99952ms/500ms)
+1761906045.7909286 [ros2_control_node-1] [ERROR] [1761906045.790646260] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99952ms/500ms)
+1761906045.8408108 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.8409247 [ros2_control_node-1] [ERROR] [1761906045.840598780] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906045.8409677 [ros2_control_node-1] [ERROR] [1761906045.840638675] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906045.8908212 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.8909419 [ros2_control_node-1] [ERROR] [1761906045.890610216] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99825ms/500ms)
+1761906045.8909867 [ros2_control_node-1] [ERROR] [1761906045.890650080] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99825ms/500ms)
+1761906045.9338775 [joint_trajectory_executor-4] [INFO] [1761906045.933659103] [joint_trajectory_executor]: Action server available
+1761906045.9341056 [joint_trajectory_executor-4] [INFO] [1761906045.933937660] [joint_trajectory_executor]: Using action topic: /arm_controller/follow_joint_trajectory
+1761906045.9342542 [joint_trajectory_executor-4] [INFO] [1761906045.934188604] [joint_trajectory_executor]: Using joint states topic: /joint_states
+1761906045.9352088 [joint_trajectory_executor-4] [INFO] [1761906045.935009837] [joint_trajectory_executor]: Moving to step 0 target positions
+1761906045.9360211 [joint_trajectory_executor-4] [INFO] [1761906045.935820481] [joint_trajectory_executor]: Sending goal...
+1761906045.9367812 [joint_trajectory_executor-4] [INFO] [1761906045.936579935] [joint_trajectory_executor]: Moving to step 0 target positions
+1761906045.9374306 [joint_trajectory_executor-4] [INFO] [1761906045.937231806] [joint_trajectory_executor]: Sending goal...
+1761906045.9380693 [joint_trajectory_executor-4] [INFO] [1761906045.937934426] [joint_trajectory_executor]: Moving to step 0 target positions
+1761906045.9387727 [joint_trajectory_executor-4] [INFO] [1761906045.938575216] [joint_trajectory_executor]: Sending goal...
+1761906045.9390008 [joint_trajectory_executor-4] [INFO] [1761906045.938939132] [joint_trajectory_executor]: Goal accepted :)
+1761906045.9396083 [joint_trajectory_executor-4] [INFO] [1761906045.939400251] [joint_trajectory_executor]: Goal accepted :)
+1761906045.9398539 [joint_trajectory_executor-4] [INFO] [1761906045.939795850] [joint_trajectory_executor]: Goal accepted :)
+1761906045.9407723 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.9408882 [ros2_control_node-1] [ERROR] [1761906045.940603632] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0003ms/500ms)
+1761906045.9409342 [ros2_control_node-1] [ERROR] [1761906045.940641288] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0003ms/500ms)
+1761906045.9907455 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906045.9908366 [ros2_control_node-1] [ERROR] [1761906045.990612622] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99726ms/500ms)
+1761906045.9909718 [ros2_control_node-1] [ERROR] [1761906045.990652244] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99726ms/500ms)
+1761906046.0308096 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.0309017 [ros2_control_node-1] [ERROR] [1761906046.030662474] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.033ms/500ms)
+1761906046.0309458 [ros2_control_node-1] [ERROR] [1761906046.030702998] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.033ms/500ms)
+1761906046.0607028 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.0608125 [ros2_control_node-1] [ERROR] [1761906046.060559710] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0003ms/500ms)
+1761906046.0608675 [ros2_control_node-1] [ERROR] [1761906046.060583918] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0003ms/500ms)
+1761906046.1007307 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.1008155 [ros2_control_node-1] [ERROR] [1761906046.100591152] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906046.1008608 [ros2_control_node-1] [ERROR] [1761906046.100617169] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0011ms/500ms)
+1761906046.1009009 [ros2_control_node-1] [ERROR] [1761906046.100635200] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0011ms/500ms)
+1761906046.1407330 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.1408174 [ros2_control_node-1] [ERROR] [1761906046.140610427] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99976ms/500ms)
+1761906046.1408637 [ros2_control_node-1] [ERROR] [1761906046.140643546] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99976ms/500ms)
+1761906046.1907339 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.1908212 [ros2_control_node-1] [ERROR] [1761906046.190610116] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99987ms/500ms)
+1761906046.1908677 [ros2_control_node-1] [ERROR] [1761906046.190641292] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99987ms/500ms)
+1761906046.2507792 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.2508857 [ros2_control_node-1] [ERROR] [1761906046.250618914] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99959ms/500ms)
+1761906046.2510252 [ros2_control_node-1] [ERROR] [1761906046.250660367] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99959ms/500ms)
+1761906046.3107746 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.3108966 [ros2_control_node-1] [ERROR] [1761906046.310617082] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9979ms/500ms)
+1761906046.3110480 [ros2_control_node-1] [ERROR] [1761906046.310669560] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9979ms/500ms)
+1761906046.3507941 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.3509140 [ros2_control_node-1] [ERROR] [1761906046.350615122] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906046.3509607 [ros2_control_node-1] [ERROR] [1761906046.350659481] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906046.3807414 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.3808272 [ros2_control_node-1] [ERROR] [1761906046.380606431] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9999ms/500ms)
+1761906046.3808732 [ros2_control_node-1] [ERROR] [1761906046.380636118] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9999ms/500ms)
+1761906046.4407446 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.4408367 [ros2_control_node-1] [ERROR] [1761906046.440603434] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99977ms/500ms)
+1761906046.4408827 [ros2_control_node-1] [ERROR] [1761906046.440623980] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99977ms/500ms)
+1761906046.4707153 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.4708002 [ros2_control_node-1] [ERROR] [1761906046.470588913] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9996ms/500ms)
+1761906046.4708447 [ros2_control_node-1] [ERROR] [1761906046.470599510] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9996ms/500ms)
+1761906046.5007341 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.5008099 [ros2_control_node-1] [ERROR] [1761906046.500596872] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99997ms/500ms)
+1761906046.5008600 [ros2_control_node-1] [ERROR] [1761906046.500605579] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99997ms/500ms)
+1761906046.5008998 [ros2_control_node-1] [WARN] [1761906046.500615723] [controller_manager]: Overrun might occur, Total time : 10063.371 us (Expected < 10000.000 us) --> Read time : 10051.841 us, Update time : 0.883 us, Write time : 10.647 us
+1761906046.5009367 [ros2_control_node-1] [WARN] [1761906046.500623320] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.123192 ms (missed cycles : 2).
+1761906046.5407207 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.5408044 [ros2_control_node-1] [ERROR] [1761906046.540598629] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99966ms/500ms)
+1761906046.5408502 [ros2_control_node-1] [ERROR] [1761906046.540610744] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99966ms/500ms)
+1761906046.5707140 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.5707989 [ros2_control_node-1] [ERROR] [1761906046.570592660] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99954ms/500ms)
+1761906046.5708470 [ros2_control_node-1] [ERROR] [1761906046.570614173] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99954ms/500ms)
+1761906046.6007166 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.6007957 [ros2_control_node-1] [ERROR] [1761906046.600597387] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99981ms/500ms)
+1761906046.6008425 [ros2_control_node-1] [ERROR] [1761906046.600607171] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99981ms/500ms)
+1761906046.6407211 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.6408024 [ros2_control_node-1] [ERROR] [1761906046.640598884] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99986ms/500ms)
+1761906046.6408486 [ros2_control_node-1] [ERROR] [1761906046.640613139] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99986ms/500ms)
+1761906046.6907363 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.6908293 [ros2_control_node-1] [ERROR] [1761906046.690594884] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99986ms/500ms)
+1761906046.6908729 [ros2_control_node-1] [ERROR] [1761906046.690625404] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99986ms/500ms)
+1761906046.7407861 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.7409086 [ros2_control_node-1] [ERROR] [1761906046.740610664] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906046.7410550 [ros2_control_node-1] [ERROR] [1761906046.740649187] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906046.8107839 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.8109016 [ros2_control_node-1] [ERROR] [1761906046.810593699] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906046.8109484 [ros2_control_node-1] [ERROR] [1761906046.810610470] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906046.8607194 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.8607819 [ros2_control_node-1] [ERROR] [1761906046.860605972] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99976ms/500ms)
+1761906046.8608041 [ros2_control_node-1] [ERROR] [1761906046.860648724] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99976ms/500ms)
+1761906046.9107792 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.9108980 [ros2_control_node-1] [ERROR] [1761906046.910600101] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0012ms/500ms)
+1761906046.9109583 [ros2_control_node-1] [ERROR] [1761906046.910634644] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0012ms/500ms)
+1761906046.9407785 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.9408889 [ros2_control_node-1] [ERROR] [1761906046.940599862] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0008ms/500ms)
+1761906046.9409344 [ros2_control_node-1] [ERROR] [1761906046.940612939] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0008ms/500ms)
+1761906046.9707162 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906046.9707999 [ros2_control_node-1] [ERROR] [1761906046.970588248] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99999ms/500ms)
+1761906046.9708455 [ros2_control_node-1] [ERROR] [1761906046.970597939] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99999ms/500ms)
+1761906047.0007200 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.0008075 [ros2_control_node-1] [ERROR] [1761906047.000597204] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99993ms/500ms)
+1761906047.0008540 [ros2_control_node-1] [ERROR] [1761906047.000604835] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99993ms/500ms)
+1761906047.0307219 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.0308058 [ros2_control_node-1] [ERROR] [1761906047.030588181] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9998ms/500ms)
+1761906047.0308516 [ros2_control_node-1] [ERROR] [1761906047.030597155] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9998ms/500ms)
+1761906047.0707171 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.0708013 [ros2_control_node-1] [ERROR] [1761906047.070587516] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906047.0708473 [ros2_control_node-1] [ERROR] [1761906047.070596742] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906047.1007211 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.1008003 [ros2_control_node-1] [ERROR] [1761906047.100595573] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906047.1008434 [ros2_control_node-1] [ERROR] [1761906047.100602110] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99985ms/500ms)
+1761906047.1008818 [ros2_control_node-1] [ERROR] [1761906047.100607853] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99985ms/500ms)
+1761906047.1307251 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.1308153 [ros2_control_node-1] [ERROR] [1761906047.130586990] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906047.1308582 [ros2_control_node-1] [ERROR] [1761906047.130594472] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906047.1607201 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.1607955 [ros2_control_node-1] [ERROR] [1761906047.160595390] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0001ms/500ms)
+1761906047.1608388 [ros2_control_node-1] [ERROR] [1761906047.160601996] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0001ms/500ms)
+1761906047.2007492 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.2008312 [ros2_control_node-1] [ERROR] [1761906047.200595285] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0001ms/500ms)
+1761906047.2008743 [ros2_control_node-1] [ERROR] [1761906047.200610608] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0001ms/500ms)
+1761906047.2307589 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.2308669 [ros2_control_node-1] [ERROR] [1761906047.230586066] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9999ms/500ms)
+1761906047.2309206 [ros2_control_node-1] [ERROR] [1761906047.230593464] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9999ms/500ms)
+1761906047.2607658 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.2608624 [ros2_control_node-1] [ERROR] [1761906047.260598974] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0003ms/500ms)
+1761906047.2609088 [ros2_control_node-1] [ERROR] [1761906047.260610827] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0003ms/500ms)
+1761906047.3007402 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.3008416 [ros2_control_node-1] [ERROR] [1761906047.300598742] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0002ms/500ms)
+1761906047.3008895 [ros2_control_node-1] [ERROR] [1761906047.300607756] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0002ms/500ms)
+1761906047.3507025 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.3507948 [ros2_control_node-1] [ERROR] [1761906047.350587473] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906047.3508406 [ros2_control_node-1] [ERROR] [1761906047.350597025] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906047.3807271 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.3808124 [ros2_control_node-1] [ERROR] [1761906047.380596229] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906047.3808587 [ros2_control_node-1] [ERROR] [1761906047.380604012] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906047.4107084 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.4107909 [ros2_control_node-1] [ERROR] [1761906047.410586024] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9998ms/500ms)
+1761906047.4108381 [ros2_control_node-1] [ERROR] [1761906047.410592489] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9998ms/500ms)
+1761906047.4507170 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.4507947 [ros2_control_node-1] [ERROR] [1761906047.450586982] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0001ms/500ms)
+1761906047.4508379 [ros2_control_node-1] [ERROR] [1761906047.450594279] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0001ms/500ms)
+1761906047.5007677 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.5008757 [ros2_control_node-1] [ERROR] [1761906047.500597684] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 99.9997ms/500ms)
+1761906047.5009215 [ros2_control_node-1] [ERROR] [1761906047.500607459] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 99.9997ms/500ms)
+1761906047.5407650 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.5408742 [ros2_control_node-1] [ERROR] [1761906047.540598328] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9994ms/500ms)
+1761906047.5409186 [ros2_control_node-1] [ERROR] [1761906047.540612771] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9994ms/500ms)
+1761906047.5409570 [ros2_control_node-1] [WARN] [1761906047.540616864] [controller_manager]: Overrun might occur, Total time : 10064.122 us (Expected < 10000.000 us) --> Read time : 10058.315 us, Update time : 1.254 us, Write time : 4.553 us
+1761906047.5409939 [ros2_control_node-1] [WARN] [1761906047.540623895] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.123784 ms (missed cycles : 2).
+1761906047.6007729 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.6008863 [ros2_control_node-1] [ERROR] [1761906047.600596677] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99995ms/500ms)
+1761906047.6009426 [ros2_control_node-1] [ERROR] [1761906047.600605387] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99995ms/500ms)
+1761906047.6507404 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.6508257 [ros2_control_node-1] [ERROR] [1761906047.650588162] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99982ms/500ms)
+1761906047.6508703 [ros2_control_node-1] [ERROR] [1761906047.650599004] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99982ms/500ms)
+1761906047.7007775 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.7008870 [ros2_control_node-1] [ERROR] [1761906047.700597898] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0006ms/500ms)
+1761906047.7009330 [ros2_control_node-1] [ERROR] [1761906047.700606969] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0006ms/500ms)
+1761906047.7307336 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.7308228 [ros2_control_node-1] [ERROR] [1761906047.730586488] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9997ms/500ms)
+1761906047.7308698 [ros2_control_node-1] [ERROR] [1761906047.730594470] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9997ms/500ms)
+1761906047.7707300 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.7708204 [ros2_control_node-1] [ERROR] [1761906047.770587827] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0007ms/500ms)
+1761906047.7708666 [ros2_control_node-1] [ERROR] [1761906047.770598032] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0007ms/500ms)
+1761906047.8006895 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.8007698 [ros2_control_node-1] [ERROR] [1761906047.800561337] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99991ms/500ms)
+1761906047.8008156 [ros2_control_node-1] [ERROR] [1761906047.800577578] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99991ms/500ms)
+1761906047.8508079 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.8509061 [ros2_control_node-1] [ERROR] [1761906047.850665038] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0368ms/500ms)
+1761906047.8510408 [ros2_control_node-1] [ERROR] [1761906047.850709586] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0368ms/500ms)
+1761906047.8806641 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.8807547 [ros2_control_node-1] [ERROR] [1761906047.880552750] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0031ms/500ms)
+1761906047.8808970 [ros2_control_node-1] [ERROR] [1761906047.880599955] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0031ms/500ms)
+1761906047.9106913 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.9107602 [ros2_control_node-1] [ERROR] [1761906047.910609099] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99885ms/500ms)
+1761906047.9108825 [ros2_control_node-1] [ERROR] [1761906047.910643144] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99885ms/500ms)
+1761906047.9407189 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.9407985 [ros2_control_node-1] [ERROR] [1761906047.940598451] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.999ms/500ms)
+1761906047.9408450 [ros2_control_node-1] [ERROR] [1761906047.940630908] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.999ms/500ms)
+1761906047.9806943 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906047.9807651 [ros2_control_node-1] [ERROR] [1761906047.980601457] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9988ms/500ms)
+1761906047.9808943 [ros2_control_node-1] [ERROR] [1761906047.980634178] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9988ms/500ms)
+1761906048.0106945 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.0107646 [ros2_control_node-1] [ERROR] [1761906048.010608515] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0006ms/500ms)
+1761906048.0108871 [ros2_control_node-1] [ERROR] [1761906048.010640572] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0006ms/500ms)
+1761906048.0707362 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.0708263 [ros2_control_node-1] [ERROR] [1761906048.070616134] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99979ms/500ms)
+1761906048.0709565 [ros2_control_node-1] [ERROR] [1761906048.070667500] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99979ms/500ms)
+1761906048.1607716 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.1608834 [ros2_control_node-1] [ERROR] [1761906048.160604768] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906048.1609256 [ros2_control_node-1] [ERROR] [1761906048.160638771] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99907ms/500ms)
+1761906048.1610556 [ros2_control_node-1] [ERROR] [1761906048.160647567] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99907ms/500ms)
+1761906048.2007065 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.2007830 [ros2_control_node-1] [ERROR] [1761906048.200607412] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10ms/500ms)
+1761906048.2009020 [ros2_control_node-1] [ERROR] [1761906048.200636347] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10ms/500ms)
+1761906048.2306683 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.2307279 [ros2_control_node-1] [ERROR] [1761906048.230595385] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99976ms/500ms)
+1761906048.2308483 [ros2_control_node-1] [ERROR] [1761906048.230620166] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99976ms/500ms)
+1761906048.2607224 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.2608123 [ros2_control_node-1] [ERROR] [1761906048.260603824] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0006ms/500ms)
+1761906048.2608552 [ros2_control_node-1] [ERROR] [1761906048.260623180] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0006ms/500ms)
+1761906048.3007147 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.3008018 [ros2_control_node-1] [ERROR] [1761906048.300603852] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99977ms/500ms)
+1761906048.3009319 [ros2_control_node-1] [ERROR] [1761906048.300628024] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99977ms/500ms)
+1761906048.3607287 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.3608277 [ros2_control_node-1] [ERROR] [1761906048.360602228] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99938ms/500ms)
+1761906048.3608737 [ros2_control_node-1] [ERROR] [1761906048.360621728] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99938ms/500ms)
+1761906048.3906965 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.3907831 [ros2_control_node-1] [ERROR] [1761906048.390588061] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9993ms/500ms)
+1761906048.3908279 [ros2_control_node-1] [ERROR] [1761906048.390600533] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9993ms/500ms)
+1761906048.4307382 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.4308152 [ros2_control_node-1] [ERROR] [1761906048.430611473] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9991ms/500ms)
+1761906048.4309466 [ros2_control_node-1] [ERROR] [1761906048.430653756] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9991ms/500ms)
+1761906048.4707427 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.4708412 [ros2_control_node-1] [ERROR] [1761906048.470625449] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9993ms/500ms)
+1761906048.4709892 [ros2_control_node-1] [ERROR] [1761906048.470684915] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9993ms/500ms)
+1761906048.5107007 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.5107768 [ros2_control_node-1] [ERROR] [1761906048.510610824] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9996ms/500ms)
+1761906048.5109086 [ros2_control_node-1] [ERROR] [1761906048.510648508] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9996ms/500ms)
+1761906048.5607662 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.5608807 [ros2_control_node-1] [ERROR] [1761906048.560608115] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99909ms/500ms)
+1761906048.5610323 [ros2_control_node-1] [ERROR] [1761906048.560662168] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99909ms/500ms)
+1761906048.5610828 [ros2_control_node-1] [WARN] [1761906048.560684657] [controller_manager]: Overrun might occur, Total time : 10125.730 us (Expected < 10000.000 us) --> Read time : 10095.296 us, Update time : 5.274 us, Write time : 25.160 us
+1761906048.5611253 [ros2_control_node-1] [WARN] [1761906048.560700148] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.199599 ms (missed cycles : 2).
+1761906048.6007540 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.6008563 [ros2_control_node-1] [ERROR] [1761906048.600618132] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906048.6010025 [ros2_control_node-1] [ERROR] [1761906048.600666583] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906048.6306949 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.6307709 [ros2_control_node-1] [ERROR] [1761906048.630614593] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0015ms/500ms)
+1761906048.6309092 [ros2_control_node-1] [ERROR] [1761906048.630655946] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0015ms/500ms)
+1761906048.6607070 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.6607857 [ros2_control_node-1] [ERROR] [1761906048.660616734] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99863ms/500ms)
+1761906048.6609292 [ros2_control_node-1] [ERROR] [1761906048.660653913] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99863ms/500ms)
+1761906048.7107496 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.7108593 [ros2_control_node-1] [ERROR] [1761906048.710616211] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99971ms/500ms)
+1761906048.7110064 [ros2_control_node-1] [ERROR] [1761906048.710669533] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99971ms/500ms)
+1761906048.7507689 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.7508838 [ros2_control_node-1] [ERROR] [1761906048.750616747] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0004ms/500ms)
+1761906048.7510364 [ros2_control_node-1] [ERROR] [1761906048.750668343] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0004ms/500ms)
+1761906048.7807474 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.7808533 [ros2_control_node-1] [ERROR] [1761906048.780614611] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0006ms/500ms)
+1761906048.7809963 [ros2_control_node-1] [ERROR] [1761906048.780654170] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0006ms/500ms)
+1761906048.8208039 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.8209212 [ros2_control_node-1] [ERROR] [1761906048.820615218] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9979ms/500ms)
+1761906048.8209670 [ros2_control_node-1] [ERROR] [1761906048.820654219] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9979ms/500ms)
+1761906048.8607895 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.8608928 [ros2_control_node-1] [ERROR] [1761906048.860602405] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99949ms/500ms)
+1761906048.8609359 [ros2_control_node-1] [ERROR] [1761906048.860624912] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99949ms/500ms)
+1761906048.9008164 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.9009311 [ros2_control_node-1] [ERROR] [1761906048.900600402] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906048.9009769 [ros2_control_node-1] [ERROR] [1761906048.900614224] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906048.9508274 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906048.9509511 [ros2_control_node-1] [ERROR] [1761906048.950595917] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0009ms/500ms)
+1761906048.9509952 [ros2_control_node-1] [ERROR] [1761906048.950624574] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0009ms/500ms)
+1761906049.0108278 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.0109487 [ros2_control_node-1] [ERROR] [1761906049.010596864] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99863ms/500ms)
+1761906049.0109923 [ros2_control_node-1] [ERROR] [1761906049.010628392] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99863ms/500ms)
+1761906049.0608256 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.0609436 [ros2_control_node-1] [ERROR] [1761906049.060603597] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99945ms/500ms)
+1761906049.0609877 [ros2_control_node-1] [ERROR] [1761906049.060627810] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99945ms/500ms)
+1761906049.1007593 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.1008785 [ros2_control_node-1] [ERROR] [1761906049.100603127] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99978ms/500ms)
+1761906049.1009233 [ros2_control_node-1] [ERROR] [1761906049.100615182] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99978ms/500ms)
+1761906049.1307116 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.1307948 [ros2_control_node-1] [ERROR] [1761906049.130594910] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0004ms/500ms)
+1761906049.1308413 [ros2_control_node-1] [ERROR] [1761906049.130619956] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0004ms/500ms)
+1761906049.1607220 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.1608036 [ros2_control_node-1] [ERROR] [1761906049.160599671] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99989ms/500ms)
+1761906049.1608598 [ros2_control_node-1] [ERROR] [1761906049.160614206] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99989ms/500ms)
+1761906049.2007325 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.2008221 [ros2_control_node-1] [ERROR] [1761906049.200598485] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906049.2008655 [ros2_control_node-1] [ERROR] [1761906049.200621557] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99971ms/500ms)
+1761906049.2009032 [ros2_control_node-1] [ERROR] [1761906049.200628313] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99971ms/500ms)
+1761906049.2607930 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.2608984 [ros2_control_node-1] [ERROR] [1761906049.260604953] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99994ms/500ms)
+1761906049.2609417 [ros2_control_node-1] [ERROR] [1761906049.260633150] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99994ms/500ms)
+1761906049.3107893 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.3109159 [ros2_control_node-1] [ERROR] [1761906049.310594182] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0003ms/500ms)
+1761906049.3109622 [ros2_control_node-1] [ERROR] [1761906049.310618294] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0003ms/500ms)
+1761906049.3607767 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.3608835 [ros2_control_node-1] [ERROR] [1761906049.360604287] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99988ms/500ms)
+1761906049.3609276 [ros2_control_node-1] [ERROR] [1761906049.360622798] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99988ms/500ms)
+1761906049.4107177 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.4108055 [ros2_control_node-1] [ERROR] [1761906049.410588341] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906049.4108493 [ros2_control_node-1] [ERROR] [1761906049.410598097] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906049.4607272 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.4608088 [ros2_control_node-1] [ERROR] [1761906049.460602245] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9997ms/500ms)
+1761906049.4608531 [ros2_control_node-1] [ERROR] [1761906049.460611856] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9997ms/500ms)
+1761906049.4907243 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.4908047 [ros2_control_node-1] [ERROR] [1761906049.490587552] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9997ms/500ms)
+1761906049.4908488 [ros2_control_node-1] [ERROR] [1761906049.490595250] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9997ms/500ms)
+1761906049.5307045 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.5307829 [ros2_control_node-1] [ERROR] [1761906049.530586099] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9998ms/500ms)
+1761906049.5308275 [ros2_control_node-1] [ERROR] [1761906049.530592082] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9998ms/500ms)
+1761906049.5607207 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.5607979 [ros2_control_node-1] [ERROR] [1761906049.560596661] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99985ms/500ms)
+1761906049.5608418 [ros2_control_node-1] [ERROR] [1761906049.560606021] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99985ms/500ms)
+1761906049.6107183 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.6108019 [ros2_control_node-1] [ERROR] [1761906049.610588572] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99996ms/500ms)
+1761906049.6108460 [ros2_control_node-1] [ERROR] [1761906049.610600301] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99996ms/500ms)
+1761906049.6108844 [ros2_control_node-1] [WARN] [1761906049.610604370] [controller_manager]: Overrun might occur, Total time : 10051.773 us (Expected < 10000.000 us) --> Read time : 10046.456 us, Update time : 0.929 us, Write time : 4.388 us
+1761906049.6109209 [ros2_control_node-1] [WARN] [1761906049.610612332] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.112065 ms (missed cycles : 2).
+1761906049.6607535 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.6608317 [ros2_control_node-1] [ERROR] [1761906049.660596754] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99984ms/500ms)
+1761906049.6608748 [ros2_control_node-1] [ERROR] [1761906049.660606133] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99984ms/500ms)
+1761906049.7207808 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.7208931 [ros2_control_node-1] [ERROR] [1761906049.720598357] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99989ms/500ms)
+1761906049.7209399 [ros2_control_node-1] [ERROR] [1761906049.720609813] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99989ms/500ms)
+1761906049.7707770 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.7708790 [ros2_control_node-1] [ERROR] [1761906049.770617721] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99989ms/500ms)
+1761906049.7710180 [ros2_control_node-1] [ERROR] [1761906049.770671954] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99989ms/500ms)
+1761906049.8407640 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.8408644 [ros2_control_node-1] [ERROR] [1761906049.840608543] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99916ms/500ms)
+1761906049.8410022 [ros2_control_node-1] [ERROR] [1761906049.840653771] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99916ms/500ms)
+1761906049.8807328 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.8808203 [ros2_control_node-1] [ERROR] [1761906049.880596517] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906049.8808680 [ros2_control_node-1] [ERROR] [1761906049.880635199] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906049.9107118 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.9107957 [ros2_control_node-1] [ERROR] [1761906049.910610545] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0019ms/500ms)
+1761906049.9109311 [ros2_control_node-1] [ERROR] [1761906049.910651121] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0019ms/500ms)
+1761906049.9407439 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906049.9408467 [ros2_control_node-1] [ERROR] [1761906049.940618802] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99772ms/500ms)
+1761906049.9409871 [ros2_control_node-1] [ERROR] [1761906049.940671301] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99772ms/500ms)
+1761906050.0308075 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.0309165 [ros2_control_node-1] [ERROR] [1761906050.030616891] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906050.0309596 [ros2_control_node-1] [ERROR] [1761906050.030671253] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906050.0607784 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.0608923 [ros2_control_node-1] [ERROR] [1761906050.060606229] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0014ms/500ms)
+1761906050.0609386 [ros2_control_node-1] [ERROR] [1761906050.060632907] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0014ms/500ms)
+1761906050.1107347 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.1108243 [ros2_control_node-1] [ERROR] [1761906050.110594842] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0001ms/500ms)
+1761906050.1108677 [ros2_control_node-1] [ERROR] [1761906050.110623349] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0001ms/500ms)
+1761906050.1407361 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.1408339 [ros2_control_node-1] [ERROR] [1761906050.140597493] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0009ms/500ms)
+1761906050.1408823 [ros2_control_node-1] [ERROR] [1761906050.140608309] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0009ms/500ms)
+1761906050.1707175 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.1707957 [ros2_control_node-1] [ERROR] [1761906050.170593769] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99935ms/500ms)
+1761906050.1708388 [ros2_control_node-1] [ERROR] [1761906050.170611355] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99935ms/500ms)
+1761906050.2007222 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.2007997 [ros2_control_node-1] [ERROR] [1761906050.200596762] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9995ms/500ms)
+1761906050.2008469 [ros2_control_node-1] [ERROR] [1761906050.200605028] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9995ms/500ms)
+1761906050.2308238 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.2309082 [ros2_control_node-1] [ERROR] [1761906050.230695060] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906050.2309518 [ros2_control_node-1] [ERROR] [1761906050.230713360] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.039ms/500ms)
+1761906050.2309895 [ros2_control_node-1] [ERROR] [1761906050.230723314] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.039ms/500ms)
+1761906050.2606826 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.2607684 [ros2_control_node-1] [ERROR] [1761906050.260553450] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0028ms/500ms)
+1761906050.2608123 [ros2_control_node-1] [ERROR] [1761906050.260580022] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0028ms/500ms)
+1761906050.2907233 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.2908046 [ros2_control_node-1] [ERROR] [1761906050.290595006] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99828ms/500ms)
+1761906050.2908490 [ros2_control_node-1] [ERROR] [1761906050.290615973] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99828ms/500ms)
+1761906050.3307147 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.3308015 [ros2_control_node-1] [ERROR] [1761906050.330593395] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99969ms/500ms)
+1761906050.3308468 [ros2_control_node-1] [ERROR] [1761906050.330616607] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99969ms/500ms)
+1761906050.3607278 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.3608139 [ros2_control_node-1] [ERROR] [1761906050.360601605] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0016ms/500ms)
+1761906050.3608603 [ros2_control_node-1] [ERROR] [1761906050.360626640] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0016ms/500ms)
+1761906050.3907154 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.3907995 [ros2_control_node-1] [ERROR] [1761906050.390593616] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99786ms/500ms)
+1761906050.3908470 [ros2_control_node-1] [ERROR] [1761906050.390613786] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99786ms/500ms)
+1761906050.4407127 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.4408042 [ros2_control_node-1] [ERROR] [1761906050.440606090] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99945ms/500ms)
+1761906050.4409451 [ros2_control_node-1] [ERROR] [1761906050.440648455] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99945ms/500ms)
+1761906050.4707081 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.4707873 [ros2_control_node-1] [ERROR] [1761906050.470612719] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9998ms/500ms)
+1761906050.4709218 [ros2_control_node-1] [ERROR] [1761906050.470656530] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9998ms/500ms)
+1761906050.5107327 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.5108297 [ros2_control_node-1] [ERROR] [1761906050.510617014] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9995ms/500ms)
+1761906050.5109773 [ros2_control_node-1] [ERROR] [1761906050.510668513] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9995ms/500ms)
+1761906050.5608590 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.5609853 [ros2_control_node-1] [ERROR] [1761906050.560716173] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 100.035ms/500ms)
+1761906050.5611486 [ros2_control_node-1] [ERROR] [1761906050.560775801] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 100.035ms/500ms)
+1761906050.6207080 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.6207976 [ros2_control_node-1] [ERROR] [1761906050.620606127] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99812ms/500ms)
+1761906050.6209676 [ros2_control_node-1] [ERROR] [1761906050.620653688] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99812ms/500ms)
+1761906050.6210222 [ros2_control_node-1] [WARN] [1761906050.620667660] [controller_manager]: Overrun might occur, Total time : 10110.835 us (Expected < 10000.000 us) --> Read time : 10089.097 us, Update time : 4.462 us, Write time : 17.276 us
+1761906050.6210687 [ros2_control_node-1] [WARN] [1761906050.620693910] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.193381 ms (missed cycles : 2).
+1761906050.6506977 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.6507733 [ros2_control_node-1] [ERROR] [1761906050.650611400] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9998ms/500ms)
+1761906050.6509163 [ros2_control_node-1] [ERROR] [1761906050.650661173] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9998ms/500ms)
+1761906050.6907005 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.6907790 [ros2_control_node-1] [ERROR] [1761906050.690614729] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9985ms/500ms)
+1761906050.6909280 [ros2_control_node-1] [ERROR] [1761906050.690655868] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9985ms/500ms)
+1761906050.7206986 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.7207730 [ros2_control_node-1] [ERROR] [1761906050.720603347] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99957ms/500ms)
+1761906050.7209165 [ros2_control_node-1] [ERROR] [1761906050.720639043] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99957ms/500ms)
+1761906050.7507088 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.7507856 [ros2_control_node-1] [ERROR] [1761906050.750611052] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9993ms/500ms)
+1761906050.7509267 [ros2_control_node-1] [ERROR] [1761906050.750647919] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9993ms/500ms)
+1761906050.8107364 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.8108344 [ros2_control_node-1] [ERROR] [1761906050.810619084] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99876ms/500ms)
+1761906050.8109827 [ros2_control_node-1] [ERROR] [1761906050.810664452] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99876ms/500ms)
+1761906050.8407385 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.8408437 [ros2_control_node-1] [ERROR] [1761906050.840609704] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0023ms/500ms)
+1761906050.8409936 [ros2_control_node-1] [ERROR] [1761906050.840659802] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0023ms/500ms)
+1761906050.8707421 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.8708353 [ros2_control_node-1] [ERROR] [1761906050.870615794] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10ms/500ms)
+1761906050.8709798 [ros2_control_node-1] [ERROR] [1761906050.870662715] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10ms/500ms)
+1761906050.9006982 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.9007733 [ros2_control_node-1] [ERROR] [1761906050.900602611] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0016ms/500ms)
+1761906050.9009120 [ros2_control_node-1] [ERROR] [1761906050.900665386] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0016ms/500ms)
+1761906050.9306912 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.9307566 [ros2_control_node-1] [ERROR] [1761906050.930607666] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0002ms/500ms)
+1761906050.9308798 [ros2_control_node-1] [ERROR] [1761906050.930639409] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0002ms/500ms)
+1761906050.9707119 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906050.9707890 [ros2_control_node-1] [ERROR] [1761906050.970610939] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10ms/500ms)
+1761906050.9709222 [ros2_control_node-1] [ERROR] [1761906050.970647405] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10ms/500ms)
+1761906051.0306985 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.0307887 [ros2_control_node-1] [ERROR] [1761906051.030595165] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99836ms/500ms)
+1761906051.0309222 [ros2_control_node-1] [ERROR] [1761906051.030622879] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99836ms/500ms)
+1761906051.0907109 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.0908031 [ros2_control_node-1] [ERROR] [1761906051.090592716] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0008ms/500ms)
+1761906051.0908449 [ros2_control_node-1] [ERROR] [1761906051.090612086] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0008ms/500ms)
+1761906051.1307135 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.1307960 [ros2_control_node-1] [ERROR] [1761906051.130593983] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0004ms/500ms)
+1761906051.1309171 [ros2_control_node-1] [ERROR] [1761906051.130619206] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0004ms/500ms)
+1761906051.1606963 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.1607661 [ros2_control_node-1] [ERROR] [1761906051.160600550] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99946ms/500ms)
+1761906051.1608877 [ros2_control_node-1] [ERROR] [1761906051.160616241] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99946ms/500ms)
+1761906051.1906829 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.1907523 [ros2_control_node-1] [ERROR] [1761906051.190600352] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9995ms/500ms)
+1761906051.1908796 [ros2_control_node-1] [ERROR] [1761906051.190627508] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9995ms/500ms)
+1761906051.2306764 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.2307434 [ros2_control_node-1] [ERROR] [1761906051.230589718] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99967ms/500ms)
+1761906051.2309043 [ros2_control_node-1] [ERROR] [1761906051.230603895] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99967ms/500ms)
+1761906051.2908001 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.2909338 [ros2_control_node-1] [ERROR] [1761906051.290610409] [dynamixel_hardware_interface]: Communication Fail --> SYNC_READ_FAIL
+1761906051.2910867 [ros2_control_node-1] [ERROR] [1761906051.290660243] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99865ms/500ms)
+1761906051.2911398 [ros2_control_node-1] [ERROR] [1761906051.290681886] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99865ms/500ms)
+1761906051.3407605 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.3408804 [ros2_control_node-1] [ERROR] [1761906051.340607266] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99897ms/500ms)
+1761906051.3410327 [ros2_control_node-1] [ERROR] [1761906051.340660698] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99897ms/500ms)
+1761906051.3707199 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.3708146 [ros2_control_node-1] [ERROR] [1761906051.370613524] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 30.0015ms/500ms)
+1761906051.3709681 [ros2_control_node-1] [ERROR] [1761906051.370652955] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 30.0015ms/500ms)
+1761906051.4107182 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.4108050 [ros2_control_node-1] [ERROR] [1761906051.410615645] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 60.0009ms/500ms)
+1761906051.4109523 [ros2_control_node-1] [ERROR] [1761906051.410658871] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 60.0009ms/500ms)
+1761906051.4407849 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.4409065 [ros2_control_node-1] [ERROR] [1761906051.440611637] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9958ms/500ms)
+1761906051.4410686 [ros2_control_node-1] [ERROR] [1761906051.440665921] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9958ms/500ms)
+1761906051.4807956 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.4809241 [ros2_control_node-1] [ERROR] [1761906051.480614921] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 10.0015ms/500ms)
+1761906051.4810874 [ros2_control_node-1] [ERROR] [1761906051.480677194] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 10.0015ms/500ms)
+1761906051.5106862 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.5107627 [ros2_control_node-1] [ERROR] [1761906051.510603383] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9979ms/500ms)
+1761906051.5109086 [ros2_control_node-1] [ERROR] [1761906051.510646326] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9979ms/500ms)
+1761906051.5406866 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.5407588 [ros2_control_node-1] [ERROR] [1761906051.540603480] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.9992ms/500ms)
+1761906051.5408983 [ros2_control_node-1] [ERROR] [1761906051.540640671] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.9992ms/500ms)
+1761906051.5907075 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.5907948 [ros2_control_node-1] [ERROR] [1761906051.590598662] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 9.99813ms/500ms)
+1761906051.5909348 [ros2_control_node-1] [ERROR] [1761906051.590631271] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 9.99813ms/500ms)
+1761906051.6206808 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.6207519 [ros2_control_node-1] [ERROR] [1761906051.620595789] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 29.9971ms/500ms)
+1761906051.6208127 [ros2_control_node-1] [ERROR] [1761906051.620606057] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 29.9971ms/500ms)
+1761906051.6606884 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.6607592 [ros2_control_node-1] [ERROR] [1761906051.660596104] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 59.9962ms/500ms)
+1761906051.6607997 [ros2_control_node-1] [ERROR] [1761906051.660604230] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 59.9962ms/500ms)
+1761906051.6608386 [ros2_control_node-1] [WARN] [1761906051.660607866] [controller_manager]: Overrun might occur, Total time : 30055.514 us (Expected < 10000.000 us) --> Read time : 30050.348 us, Update time : 0.930 us, Write time : 4.236 us
+1761906051.6609631 [ros2_control_node-1] [WARN] [1761906051.660624389] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.124284 ms (missed cycles : 4).
+1761906051.7107136 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.7108078 [ros2_control_node-1] [ERROR] [1761906051.710590554] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 99.9966ms/500ms)
+1761906051.7108500 [ros2_control_node-1] [ERROR] [1761906051.710607157] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 99.9966ms/500ms)
+1761906051.7707520 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.7708678 [ros2_control_node-1] [ERROR] [1761906051.770598267] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 149.998ms/500ms)
+1761906051.7710106 [ros2_control_node-1] [ERROR] [1761906051.770634103] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 149.998ms/500ms)
+1761906051.8407595 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.8408651 [ros2_control_node-1] [ERROR] [1761906051.840608811] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 209.997ms/500ms)
+1761906051.8409121 [ros2_control_node-1] [ERROR] [1761906051.840645144] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 209.997ms/500ms)
+1761906051.9207914 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906051.9209092 [ros2_control_node-1] [ERROR] [1761906051.920605107] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 279.997ms/500ms)
+1761906051.9209557 [ros2_control_node-1] [ERROR] [1761906051.920635913] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 279.997ms/500ms)
+1761906052.0107794 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906052.0108907 [ros2_control_node-1] [ERROR] [1761906052.010599542] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 359.997ms/500ms)
+1761906052.0109375 [ros2_control_node-1] [ERROR] [1761906052.010638080] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 359.997ms/500ms)
+1761906052.1107602 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906052.1108739 [ros2_control_node-1] [ERROR] [1761906052.110598550] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 449.997ms/500ms)
+1761906052.1109350 [ros2_control_node-1] [ERROR] [1761906052.110634021] [dynamixel_hardware_interface]: Dynamixel Write Fail (Duration: 449.997ms/500ms)
+1761906052.2207637 [ros2_control_node-1] SyncRead Rx Fail [Dxl Size : 5] [Error code : -3002]
+1761906052.2208695 [ros2_control_node-1] [ERROR] [1761906052.220603638] [dynamixel_hardware_interface]: Dynamixel Read Fail (Duration: 549.997ms/500ms)
+1761906052.2209148 [ros2_control_node-1] [ERROR] [1761906052.220642141] [controller_manager]: Deactivating following hardware components as their read cycle resulted in an error: [ OpenManipulatorXSystem ]
+1761906053.2314594 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1761906053.2324252 [ros2_control_node-1] [INFO] [1761906053.231366294] [rclcpp]: signal_handler(signum=2)
+1761906053.2325003 [ros2_control_node-1] [INFO] [1761906053.231463339] [controller_manager]: Shutdown request received....
+1761906053.2325296 [ros2_control_node-1] [INFO] [1761906053.231501525] [controller_manager]: Shutting down all controllers in the controller manager.
+1761906053.2325480 [ros2_control_node-1] [INFO] [1761906053.231518245] [resource_manager]: 'shutdown' hardware 'OpenManipulatorXSystem' 
+1761906053.2325637 [ros2_control_node-1] [INFO] [1761906053.231525973] [resource_manager]: Successful 'shutdown' of hardware 'OpenManipulatorXSystem'
+1761906053.2325795 [ros2_control_node-1] [WARN] [1761906053.231529219] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl1/Goal Position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2325957 [ros2_control_node-1] [WARN] [1761906053.231537715] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl2/Goal Position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326131 [ros2_control_node-1] [WARN] [1761906053.231543331] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl3/Goal Position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326291 [ros2_control_node-1] [WARN] [1761906053.231548663] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl4/Goal Position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326429 [ros2_control_node-1] [WARN] [1761906053.231553764] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl5/Goal Position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326565 [ros2_control_node-1] [WARN] [1761906053.231558840] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint1/position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326691 [ros2_control_node-1] [WARN] [1761906053.231564079] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint2/position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326827 [ros2_control_node-1] [WARN] [1761906053.231569379] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint3/position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2326996 [ros2_control_node-1] [WARN] [1761906053.231574512] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint4/position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327154 [ros2_control_node-1] [WARN] [1761906053.231586374] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'gripper_left_joint/position' command interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327311 [ros2_control_node-1] [WARN] [1761906053.231596618] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl1/Present Position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327461 [ros2_control_node-1] [WARN] [1761906053.231602637] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl1/Present Velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327626 [ros2_control_node-1] [WARN] [1761906053.231608378] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl1/Present Current' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327819 [ros2_control_node-1] [WARN] [1761906053.231617177] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl2/Present Position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2327967 [ros2_control_node-1] [WARN] [1761906053.231626502] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl2/Present Velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2328694 [robot_state_publisher-3] [INFO] [1761906053.231364200] [rclcpp]: signal_handler(signum=2)
+1761906053.2329361 [ros2_control_node-1] [WARN] [1761906053.231634136] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl2/Present Current' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2329588 [ros2_control_node-1] [WARN] [1761906053.231641647] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl3/Present Position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2329772 [ros2_control_node-1] [WARN] [1761906053.231647321] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl3/Present Velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2329946 [ros2_control_node-1] [WARN] [1761906053.231670611] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl3/Present Current' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330086 [ros2_control_node-1] [WARN] [1761906053.231677041] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl4/Present Position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330220 [ros2_control_node-1] [WARN] [1761906053.231682713] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl4/Present Velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330351 [ros2_control_node-1] [WARN] [1761906053.231687595] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl4/Present Current' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330487 [ros2_control_node-1] [WARN] [1761906053.231696287] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl5/Present Position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330654 [ros2_control_node-1] [WARN] [1761906053.231704049] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl5/Present Velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330799 [ros2_control_node-1] [WARN] [1761906053.231715536] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'dxl5/Present Current' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2330930 [ros2_control_node-1] [WARN] [1761906053.231724087] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint1/position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331066 [ros2_control_node-1] [WARN] [1761906053.231729013] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint1/velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331209 [ros2_control_node-1] [WARN] [1761906053.231733914] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint1/effort' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331338 [ros2_control_node-1] [WARN] [1761906053.231738813] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint2/position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331462 [ros2_control_node-1] [WARN] [1761906053.231743620] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint2/velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331586 [ros2_control_node-1] [WARN] [1761906053.231748346] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint2/effort' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331748 [ros2_control_node-1] [WARN] [1761906053.231753039] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint3/position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331877 [ros2_control_node-1] [WARN] [1761906053.231757809] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint3/velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2331998 [ros2_control_node-1] [WARN] [1761906053.231762610] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint3/effort' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332125 [ros2_control_node-1] [WARN] [1761906053.231769781] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint4/position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332261 [ros2_control_node-1] [WARN] [1761906053.231780967] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint4/velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332382 [ros2_control_node-1] [WARN] [1761906053.231790005] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'joint4/effort' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332528 [ros2_control_node-1] [WARN] [1761906053.231796560] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'gripper_left_joint/position' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332661 [ros2_control_node-1] [WARN] [1761906053.231809877] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'gripper_left_joint/velocity' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332788 [ros2_control_node-1] [WARN] [1761906053.231815984] [controller_manager]: (hardware 'OpenManipulatorXSystem'): 'gripper_left_joint/effort' state interface not in available list. This should not happen (hint: multiple cleanup calls).
+1761906053.2332921 [ros2_control_node-1] [INFO] [1761906053.231845396] [controller_manager]: Shutting down the controller manager.
+1761906053.2333047 [ros2_control_node-1] [ERROR] [1761906053.231921405] [controller_manager.pal_statistics]: Exception in publisher thread: context cannot be slept with because it's invalid!. Aborting!
+1761906053.2333183 [ros2_control_node-1] [ERROR] [1761906053.231921574] [controller_manager.pal_statistics]: Exception in publisher thread: context cannot be slept with because it's invalid!. Aborting!
+1761906053.2333670 [joint_trajectory_executor-4] Traceback (most recent call last):
+1761906053.2333887 [joint_trajectory_executor-4]   File "/home/ubuntu/omx_ws/install/open_manipulator_bringup/lib/open_manipulator_bringup/joint_trajectory_executor", line 33, in <module>
+1761906053.2334054 [joint_trajectory_executor-4]     sys.exit(load_entry_point('open-manipulator-bringup==4.0.9', 'console_scripts', 'joint_trajectory_executor')())
+1761906053.2334206 [joint_trajectory_executor-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1761906053.2334352 [joint_trajectory_executor-4]   File "/home/ubuntu/omx_ws/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup/joint_trajectory_executor.py", line 250, in main
+1761906053.2334495 [joint_trajectory_executor-4]     rclpy.spin(node)
+1761906053.2334633 [joint_trajectory_executor-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+1761906053.2334769 [joint_trajectory_executor-4]     executor.spin_once()
+1761906053.2334907 [joint_trajectory_executor-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 839, in spin_once
+1761906053.2335062 [joint_trajectory_executor-4]     self._spin_once_impl(timeout_sec)
+1761906053.2335193 [joint_trajectory_executor-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 823, in _spin_once_impl
+1761906053.2335331 [joint_trajectory_executor-4]     handler, entity, node = self.wait_for_ready_callbacks(
+1761906053.2335467 [joint_trajectory_executor-4]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1761906053.2335665 [joint_trajectory_executor-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 793, in wait_for_ready_callbacks
+1761906053.2335792 [joint_trajectory_executor-4]     return next(self._cb_iter)
+1761906053.2335925 [joint_trajectory_executor-4]            ^^^^^^^^^^^^^^^^^^^
+1761906053.2336054 [joint_trajectory_executor-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 697, in _wait_for_ready_callbacks
+1761906053.2336195 [joint_trajectory_executor-4]     wait_set.wait(timeout_nsec)
+1761906053.2336347 [joint_trajectory_executor-4] KeyboardInterrupt
+1761906053.2408459 [ros2_control_node-1] [INFO] [1761906053.240711999] [controller_manager.pal_statistics]: Async messages lost 0
+1761906053.2409275 [ros2_control_node-1] [INFO] [1761906053.240730075] [controller_manager.pal_statistics]: publish_async_failures_ 0
+1761906053.2416005 [ros2_control_node-1] [INFO] [1761906053.241543069] [controller_manager.pal_statistics]: Async messages lost 0
+1761906053.2416325 [ros2_control_node-1] [INFO] [1761906053.241551720] [controller_manager.pal_statistics]: publish_async_failures_ 0
+1761906053.2459414 [ros2_control_node-1] [ID:011] Torque OFF
+1761906053.2469215 [ros2_control_node-1] [ID:012] Torque OFF
+1761906053.2479570 [ros2_control_node-1] [ID:013] Torque OFF
+1761906053.2489114 [ros2_control_node-1] [ID:014] Torque OFF
+1761906053.2499213 [ros2_control_node-1] [ID:015] Torque OFF
+1761906053.2500198 [ros2_control_node-1] [INFO] [1761906053.249875593] [dynamixel_hardware_interface]: Dynamixel Hardware Stop!
+1761906053.2500560 [ros2_control_node-1] Dynamixel destructor start
+1761906053.2501509 [ros2_control_node-1] Dynamixel destructor end
+1761906053.2594926 [ERROR] [joint_trajectory_executor-4]: process has died [pid 20241, exit code -2, cmd '/home/ubuntu/omx_ws/install/open_manipulator_bringup/lib/open_manipulator_bringup/joint_trajectory_executor --ros-args --params-file /home/ubuntu/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x/initial_positions.yaml'].
+1761906053.3363061 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 20171]
+1761906053.3569512 [INFO] [ros2_control_node-1]: process has finished cleanly [pid 20169]
